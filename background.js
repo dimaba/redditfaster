@@ -1,9 +1,5 @@
-// Copyright (c) 2012 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+// Based on Omnibox Sample Extension 
 
-// This event is fired each time the user updates the text in the omnibox,
-// as long as the extension's keyword mode is still active.
 chrome.omnibox.onInputChanged.addListener(
   function(text, suggest) {
     suggest([
