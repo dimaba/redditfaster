@@ -3,13 +3,13 @@
   "short_name": "RedditFaster",
   "manifest_version": 2,
   "description" : "Reddit Faster lets you open a subreddit just by typing its name, and more.",
-  "version": "0.3",
+  "version": "0.40",
   
   "background": {
     "scripts": ["background.js"],
 	"persistent": false
   },
-  "omnibox": { "keyword" : "r" },
+  "omnibox": { "keyword" : "rdd" },
   "icons": { 
 	"16": "small_reddit_alien.png"
 	},
