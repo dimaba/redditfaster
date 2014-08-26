@@ -5,9 +5,9 @@ chrome.omnibox.onInputChanged.addListener(
 	text = text.trim();
     suggest([
       {content: "http://reddit.com/r/" + text.replace(" ",""), description: "Goto /r/" + text.replace(" ","")},
-	  {content: "http://www.reddit.com/subreddits/search?q=" + text, description: "Search subreddits for " + text},
-	  {content: "http://www.reddit.com/search?q=" + text, description: "Search Reddit for " + text},
-	  {content: "https://duckduckgo.com/?q=reddit+" + text, description: "Search Reddit for " + text + " with DuckDuckGo"}
+	  {content: "-s " + text, description: "Search subreddits for " + text},
+	  {content: "-r  + text, description: "Search Reddit for " + text},
+	  {content: "-sd " + text, description: "Search Reddit for " + text + " with DuckDuckGo"}
     ]);
   });
 
