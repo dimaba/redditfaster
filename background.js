@@ -98,6 +98,16 @@ chrome.omnibox.onInputEntered.addListener(
 		};
 	};
 	
+	//detect search within subreddit
+	if (urlSet === false) 
+	{
+		if (splittext[1] === "search")
+		{
+			full_url="http://reddit.com/r/" + splittext[0] + "/search?q=" + splittext.slice(2) + "test&restrict_sr=on";
+			urlSet = true;
+		};
+	};
+	
 	//detect if a web address has been generated at this point and set if necessary
 	if (urlSet === false) {full_url = "http://reddit.com/r/" + text.replace(" ","");}
 	
