@@ -6,7 +6,7 @@ chrome.omnibox.onInputChanged.addListener(
     suggest([
       {content: "http://reddit.com/r/" + text.replace(" ",""), description: "Goto /r/" + text.replace(" ","")},
 	  {content: "-s " + text, description: "Search subreddits for " + text},
-	  {content: "-r  + text, description: "Search Reddit for " + text},
+	  {content: "-r " + text, description: "Search Reddit for " + text},
 	  {content: "-sd " + text, description: "Search Reddit for " + text + " with DuckDuckGo"}
     ]);
   });
@@ -103,7 +103,7 @@ chrome.omnibox.onInputEntered.addListener(
 	{
 		if (splittext[1] === "search")
 		{
-			full_url="http://reddit.com/r/" + splittext[0] + "/search?q=" + splittext.slice(2) + "test&restrict_sr=on";
+			full_url="http://reddit.com/r/" + splittext[0] + "/search?q=" + splittext.slice(2) + "&restrict_sr=on";
 			urlSet = true;
 		};
 	};
