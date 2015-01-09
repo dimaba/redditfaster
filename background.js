@@ -7,7 +7,8 @@ chrome.omnibox.onInputChanged.addListener(
       {content: "http://reddit.com/r/" + text.replace(" ",""), description: "Goto /r/" + text.replace(" ","")},
 	  {content: "-s " + text, description: "Search subreddits for " + text},
 	  {content: "-r " + text, description: "Search Reddit for " + text},
-	  {content: "-sd " + text, description: "Search Reddit for " + text + " with DuckDuckGo"}
+	  {content: "-sd " + text, description: "Search Reddit for " + text + " with DuckDuckGo"},
+	  {content: "-m", description: "View extension information and keywords"}
     ]);
   });
 
@@ -38,6 +39,11 @@ chrome.omnibox.onInputEntered.addListener(
 			case "-sd":
 				text = text.substr(4);
 				full_url = "https://duckduckgo.com/?q=reddit+" + text;
+				urlSet = true;
+			break;
+
+			case "-m":
+				full_url = "https://chrome.google.com/webstore/detail/reddit-faster/nhbeokklloeajgpohmfoeknikhmmnlcb";
 				urlSet = true;
 			break;
 			
