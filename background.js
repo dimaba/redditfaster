@@ -111,13 +111,13 @@ chrome.omnibox.onInputEntered.addListener(
 		{
 			if (splittext[0] === "search" & splittext[1] === "subreddits")
 			{
-				text = text.substr(17)
+				text = text.substr(17);
 				full_url = "http://www.reddit.com/subreddits/search?q=" + text;
 				urlSet = true;
 			};
 			else if (splittext[0] === "search")
 			{
-				text = text.substr(7)
+				text = text.substr(7);
 				full_url = "http://www.reddit.com/search?q=" + text;
 				urlSet = true;
 			};
