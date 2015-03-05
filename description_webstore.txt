@@ -1,4 +1,4 @@
-Reddit Faster lets you open a subreddit just by typing its name. To use, type 'rdd' in the address bar to activate Reddit Faster. Then, simply type the subreddit's name and press enter. That's all! Additional functions include searching for subreddits and content and accessing subreddit sections.
+Reddit Faster lets you open a subreddit just by typing its name. To use, type 'rdd' in the address bar to activate Reddit Faster. Then, simply type the subreddit's name and press enter. That's all!
 
 Main features:
  - One-step navigation to any subreddit: simply type its name into the address bar and press enter
