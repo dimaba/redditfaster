@@ -2,7 +2,7 @@
   "name": "Reddit Faster",
   "short_name": "RedditFaster",
   "manifest_version": 2,
-  "description" : "Reddit Faster lets you open a subreddit just by typing its name, and more.",
+  "description" : "Reddit Faster lets you open a subreddit just by typing its name, search Reddit straight from your address bar, and more.",
   "version": "0.80",
   
   "background": {
