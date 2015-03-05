@@ -6,7 +6,9 @@ Main features:
  - Sort posts and access subreddit sections with simple commands
 
 Search functions
-Searching Reddit is easy: you simply type 'search', followed by the words you want to search for, and press enter. Do you want to search for a subreddit? Type 'search subreddits', followed by your search words. You can even search within a specific subreddit by typing the name of the subreddit, followed by 'search', followed by the words you want to search for.
+Searching Reddit is easy: you simply type 'search', followed by the words you want to search for, and press enter. 
+Do you want to search for a subreddit? Type 'search subreddits', followed by your search words. 
+You can even search within a specific subreddit by typing the name of the subreddit, followed by 'search', followed by the words you want to search for.
 (In previous versions this functionality was handled using short prefixes. These will continue to work. For a list of prefixes see the full Readme at https://github.com/dimaba/redditfaster)
 
 Sorting posts in a subreddit
