@@ -38,7 +38,7 @@ chrome.omnibox.onInputEntered.addListener(
 			
 			case "-sd":
 				text = text.substr(4);
-				full_url = "https://duckduckgo.com/?q=reddit+" + text;
+				full_url = "https://duckduckgo.com/?q=site%3Areddit.com+" + text;
 				urlSet = true;
 			break;
 
@@ -49,6 +49,33 @@ chrome.omnibox.onInputEntered.addListener(
 			
 			default:
 			//pass
+		};
+	};
+
+	//detect search in all of reddit
+	if (urlSet === false)
+	{
+		if (splittext.length > 1)
+		{
+			if (splittext[0] === "search" && splittext[1] === "subreddits")
+			{
+				text = text.substr(7 + splittext[1].length);
+				full_url = "http://www.reddit.com/subreddits/search?q=" + text;
+				urlSet = true;
+			}
+			
+			else if (splittext[0] === "search" && splittext[1] === "duckduckgo")
+			{
+				text = text.substr(7 + splittext[1].length);
+				full_url = "https://duckduckgo.com/?q=site%3Areddit.com+" + text;
+				urlSet = true;
+			}
+			else if (splittext[0] === "search")
+			{
+				text = text.substr(7);
+				full_url = "http://www.reddit.com/search?q=" + text;
+				urlSet = true;
+			};
 		};
 	};
 	
@@ -103,27 +130,7 @@ chrome.omnibox.onInputEntered.addListener(
 			//pass
 		};
 	};
-	
-	//detect search in all of reddit
-	if (urlSet === false)
-	{
-		if (length(splittext) > 1)
-		{
-			if (splittext[0] === "search" & splittext[1] === "subreddits")
-			{
-				text = text.substr(17);
-				full_url = "http://www.reddit.com/subreddits/search?q=" + text;
-				urlSet = true;
-			};
-			else if (splittext[0] === "search")
-			{
-				text = text.substr(7);
-				full_url = "http://www.reddit.com/search?q=" + text;
-				urlSet = true;
-			};
-		};
-	};
-	
+
 	//detect search within subreddit
 	if (urlSet === false) 
 	{
