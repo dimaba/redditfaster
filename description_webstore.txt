@@ -20,25 +20,6 @@ Similarly, any subreddit which accepts picture submissions will have an associat
 
 A full Readme with more detail and examples is available at https://github.com/dimaba/redditfaster.
 
-Changelog (current version: 0.80):
 New in version 0.80:
 - Added search keywords to make searching more intuitive (prefix functionality is maintained)
 - Made keyword comparison case-insensitive
-
-New in version 0.71:
-- Added prefix "-m" which leads you to this page, to view extension info/updates
-- Added more icon sizes
-
-New in version 0.60:
-- Added searching within subreddits with 'search' postfix
-
-New in version 0.51:
-- Fixed suggested commands returning the wrong URL
-
-New in version 0.40:
-- Changed keyword to 'rdd' instead of 'r'
-
-New in version 0.31:
-- Support for postfixes to open specific parts of a subreddit. 
-  Supported: img (opens imgur album); top, new, hot, rising, controversial, wiki (open different sections of the subreddit).
-- Improved DuckDuckGo search functionality
