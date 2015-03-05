@@ -16,7 +16,7 @@ chrome.omnibox.onInputChanged.addListener(
 chrome.omnibox.onInputEntered.addListener(
   function(text) {
 	var full_url;
-	var splittext = text.split(" ");
+	var splittext = text.toLowerCase().split(" ");
 	var urlSet = false;
 	
 	//detect prefixes
