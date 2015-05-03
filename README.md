@@ -21,7 +21,10 @@ Postfixes
  - Adding 'top', 'new', 'hot', 'rising', 'controversial' or 'wiki' opens the corresponding section of the subreddit
  - Adding 'search' after the subreddit's name, followed by a collection of search terms, lets you search within a subreddit
 
-Changelog (current version: 0.80):
+Changelog (current version: 0.90):
+New in version 0.90:
+- Added Q&A sort (though currently this doesn't do anything for subreddit sorting)
+
 New in version 0.80:
 - Added search keywords to make searching more intuitive (prefix functionality is maintained)
 - Made keyword comparison case-insensitive
