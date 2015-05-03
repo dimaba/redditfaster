@@ -22,6 +22,7 @@ Postfixes
  - Adding 'search' after the subreddit's name, followed by a collection of search terms, lets you search within a subreddit
 
 Changelog (current version: 0.90):
+
 New in version 0.90:
 - Added Q&A sort (though currently this doesn't do anything for subreddit sorting)
 
