@@ -3,7 +3,7 @@
   "short_name": "RedditFaster",
   "manifest_version": 2,
   "description" : "Reddit Faster lets you open a subreddit just by typing its name, search Reddit straight from your address bar, and more.",
-  "version": "0.80",
+  "version": "0.90",
   
   "background": {
     "scripts": ["background.js"],
@@ -11,9 +11,9 @@
   },
   "omnibox": { "keyword" : "rdd" },
   "icons": { 
-	"16": "small_reddit_alien.png",
-  "48": "alien48.png",
-  "128": "alien128.png"
+	"16": "assets/small_reddit_alien.png",
+  "48": "assets/alien48.png",
+  "128": "assets/alien128.png"
 	},
   "permissions": [ "tabs" ],
   "offline_enabled": false

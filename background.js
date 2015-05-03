@@ -49,8 +49,8 @@ chrome.omnibox.onInputEntered.addListener(
 			
 			default:
 			//pass
-		};
-	};
+		}
+	}
 
 	//detect search in all of reddit
 	if (urlSet === false)
@@ -75,9 +75,9 @@ chrome.omnibox.onInputEntered.addListener(
 				text = text.substr(7);
 				full_url = "http://www.reddit.com/search?q=" + text;
 				urlSet = true;
-			};
-		};
-	};
+			}
+		}
+	}
 	
 	//detect postfixes
 	if (urlSet === false) 
@@ -120,6 +120,12 @@ chrome.omnibox.onInputEntered.addListener(
 				urlSet = true;
 			break;
 			
+			case "qa":
+			  text = text.substr(0,text.length - 2);
+			  full_url = "http://reddit.com/r/" + text.replace(" ","") + "/qa/";
+			  urlSet = true;
+			  break;
+			
 			case "wiki":
 				text = text.substr(0,text.length - 4);
 				full_url = "http://reddit.com/r/" + text.replace(" ","") + "/wiki/";
@@ -128,8 +134,8 @@ chrome.omnibox.onInputEntered.addListener(
 			
 			default:
 			//pass
-		};
-	};
+		}
+	}
 
 	//detect search within subreddit
 	if (urlSet === false) 
@@ -138,8 +144,8 @@ chrome.omnibox.onInputEntered.addListener(
 		{
 			full_url="http://reddit.com/r/" + splittext[0] + "/search?q=" + splittext.slice(2) + "&restrict_sr=on";
 			urlSet = true;
-		};
-	};
+		}
+	}
 	
 	//detect if a web address has been generated at this point and set if necessary
 	if (urlSet === false) {full_url = "http://reddit.com/r/" + text.replace(" ","");}
